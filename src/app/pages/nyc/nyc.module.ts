@@ -26,8 +26,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes) 
+    
   ],
-  declarations: [NoticiasComponent, ComunicadosComponent]
+  declarations: [NYCComponent]
 })
 export class NycModule { }

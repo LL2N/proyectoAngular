@@ -12,6 +12,6 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: []
+  declarations: [ListaComponent]
 })
 export class ListaModule { }

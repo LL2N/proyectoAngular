@@ -31,10 +31,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule, RouterModule.forRoot(routes),
+    CommonModule, RouterModule, 
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [QuienessomosComponent, DYOComponent, HistoriaComponent, DyoComponent]
+  declarations: [SobreLPBComponent]
 })
 export class SobreLPBModule { }

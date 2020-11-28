@@ -1,25 +1,18 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+
+import {PagesRoutingModule} from './pages-routing.module';
 import {PagesComponent} from './pages.component';
-import { RouterModule } from '@angular/router';
-import { PagesRoutingModule } from './pages-routing.module';
-import { RutasComponent } from './rutas/rutas.component';
-import { SobreLPBComponent } from './sobre-lpb/sobre-lpb.component';
-
-
 
 
 @NgModule({
   declarations: [
-    PagesComponent,
-    RutasComponent,
-    SobreLPBComponent
+    PagesComponent
   ],
   imports: [
-    CommonModule, RouterModule,
+    CommonModule,
     PagesRoutingModule
-  ],
-  exports: [RouterModule]
+  ]
 })
 export class PagesModule {
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TarifasComponent } from './tarifas/tarifas.component';
-import { HorariosComponent } from '.horarios/horarios.component';
+import { HorariosComponent } from './horarios/horarios.component';
 import { ListaComponent } from './lista/lista.component';
 import { RutasComponent } from './rutas.component';
 import { Routes, RouterModule } from "@angular/router";
@@ -35,6 +35,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RutasComponent, TarifasComponent, HorariosComponent, ListaComponent]
+  declarations: [RutasComponent]
 })
 export class RutasModule { }
