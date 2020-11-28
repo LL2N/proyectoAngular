@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif
+}
+
+body{
+ 	 background: #E6C779;
+}
+.topFondo img {
+margin: 25px
+}
+
+.topFondo {
+width: 100%;
+height: 200px;
+left: 0px;
+top: 0px;
+background: #DAA520;
+}
+
+.topFondo .button {
+  float: right;
+}
+
+.button {
+ padding-top: 150px ;
+}
+
+.button li {
+ display: inline;
+}
+
+.button li a {
+ font-family: Arial;
+ font-size: 25px;
+ text-decoration: none;
+ padding: 20px;
+ color: #fff;
+}
+.button li a:hover {
+ color: #FBCF00;
+}
+
+
+
+
