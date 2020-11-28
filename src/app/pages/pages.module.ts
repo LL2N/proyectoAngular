@@ -4,12 +4,16 @@ import {PagesComponent} from './pages.component';
 import { RouterModule } from '@angular/router';
 import { PagesRoutingModule } from './pages-routing.module';
 import { RutasComponent } from './rutas/rutas.component';
+import { SobreLPBComponent } from './sobre-lpb/sobre-lpb.component';
+
+
 
 
 @NgModule({
   declarations: [
     PagesComponent,
-    RutasComponent
+    RutasComponent,
+    SobreLPBComponent
   ],
   imports: [
     CommonModule, RouterModule,
