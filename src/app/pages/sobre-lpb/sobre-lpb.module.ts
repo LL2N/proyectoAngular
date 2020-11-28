@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
-import { DYOComponent } from './dyo/dyo.component';
+import { DYOComponent, DyoComponent } from './dyo/dyo.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { Routes, RouterModule } from "@angular/router";
 import { SobreLPBComponent } from './sobre-lpb.component';
@@ -35,6 +35,6 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [QuienessomosComponent, DYOComponent, HistoriaComponent]
+  declarations: [QuienessomosComponent, DYOComponent, HistoriaComponent, DyoComponent]
 })
 export class SobreLPBModule { }
