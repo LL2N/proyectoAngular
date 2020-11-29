@@ -1,25 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
-import { ListaComponent } from './lista.component';
+import { RutaComponent } from './ruta.component';
 
 const routes: Routes = [
-  {
-    path: "",
-    component: ListaComponent,
-    children: [
-      {
-        path: "ruta",
-        loadChildren: () => import("./ruta/ruta.module").then(m => m.RutaModule)
-      }
-    ]
-  }
+  {path: '', component: RutaComponent}
 ];
+
 @NgModule({
   imports: [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [ListaComponent]
+  declarations: [RutaComponent]
 })
 export class ListaModule { }
