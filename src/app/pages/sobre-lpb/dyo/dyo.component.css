@@ -78,33 +78,46 @@
 }
 
 .content {
-  width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-right: 50px;
   margin-bottom: 50px;
 }
-.content .post {
-  width: 80%;
-  height: auto;
-  margin-top: 50px;
-  margin-left: 10%;
-  background-color: #fff;
+
+.titulo{
+  margin-top:50px;
+width: 1001px;
+height: 565px;
+left: 81px;
+top: 150px;
+
+font-style: normal;
+font-weight: bold;
+font-size: 23px;
+line-height: 28px;
+
+color: #E02621;
+}
+.titulo2{
+  margin-top:50px;
+width: 1001px;
+height: 565px;
+left: 81px;
+top: 150px;
+
+font-style: normal;
+font-weight: bold;
+font-size: 23px;
+line-height: 28px;
+
+color: #FBCF00;
 }
 
-.content .post .date {
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 15px;
-  background-color: #e02621;
-  padding: 20px;
+.dyo{
+  margin:50px;
+  background: #FFFFFF;
 }
 
-.content .post p {
-  text-align: justify;
-  text-justify: inter-word;
-  color: #554b4b;
-  margin-bottom: 10px;
-  font-size: 18px;
-  padding: 20px;
-}
 .footer {
   padding: 20px;
   left: 0;
