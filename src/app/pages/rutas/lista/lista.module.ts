@@ -7,12 +7,7 @@ const routes: Routes = [
   {
     path: "",
     component: ListaComponent,
-    children: [
-      {
-        path: "ruta",
-        loadChildren: () => import("./ruta/ruta.module").then(m => m.RutaModule)
-      }
-    ]
+    
   }
 ];
 @NgModule({

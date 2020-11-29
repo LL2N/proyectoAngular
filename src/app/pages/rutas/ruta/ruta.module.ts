@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {Routes, RouterModule} from '@angular/router';
 import { RutaComponent } from './ruta.component';
-
+import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
-  {path: '', component: RutaComponent}
+  {
+    path: "",
+    component: RutaComponent,
+    
+  }
 ];
-
 @NgModule({
   imports: [
     CommonModule, RouterModule.forChild(routes)

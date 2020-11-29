@@ -25,6 +25,11 @@ const routes: Routes = [
         path: "tarifas",
         loadChildren: () =>
           import("./tarifas/tarifas.module").then(m => m.TarifasModule)
+      },
+      {
+        path: "ruta",
+        loadChildren: () =>
+          import("./ruta/ruta.module").then(m => m.RutaModule)
       }
     ]
   }
