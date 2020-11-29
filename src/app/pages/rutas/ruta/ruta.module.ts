@@ -16,4 +16,4 @@ const routes: Routes = [
   exports: [RouterModule],
   declarations: [RutaComponent]
 })
-export class ListaModule { }
+export class RutaModule { }

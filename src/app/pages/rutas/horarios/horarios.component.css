@@ -110,11 +110,12 @@
 
 
 table{
-    margin-top: 5%;
+    margin-top: 50px;
     margin-left: 200px;
     border-collapse: collapse;
     float: left;
     display:inline;
+    caption-side: bottom;
     margin-bottom: 15%;
 
 }
