@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { Routes, RouterModule } from "@angular/router";
 
 
+
 const routes: Routes = [
   { path: "", redirectTo: "pages", pathMatch: "full" },
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes)], 
   exports: [RouterModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent, ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
