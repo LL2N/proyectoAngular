@@ -14,13 +14,19 @@ const routes: Routes = [
       import("./pages/pages.module").then(
         m => m.PagesModule
       ) /*component: PagesComponent */
+  },
+  {
+    path: "editor", loadChildren: () =>
+      import("./editor/editor.module").then(
+        m => m.EditorModule
+      ) /*component: PagesComponent */
   }
 ];
 
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes)], 
   exports: [RouterModule],
-  declarations: [AppComponent, ],
+  declarations: [AppComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
