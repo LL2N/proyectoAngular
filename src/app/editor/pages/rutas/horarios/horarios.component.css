@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #e6c779;
+}
+.topFondo img {
+  margin: 25px;
+}
+
+.topFondo {
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  background: #daa520;
+}
+
+.topFondo .button {
+  float: right;
+}
+
+.button {
+  padding-top: 150px;
+}
+
+.button li {
+  display: inline;
+}
+
+.button li a {
+  font-family: Arial;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+}
+.button li a:hover {
+  color: #fbcf00;
+}
+
+.btn1 {
+  margin-left: 100px;
+  width: 400px;
+  height: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #e4bc53;
+  text-decoration: none;
+}
+
+.btn2 {
+  margin-left: 90px;
+  width: 400px;
+  height: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #e4bc53;
+  text-decoration: none;
+}
+
+.btn3 {
+  margin-left: 60px;
+  width: 400px;
+  height: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #e4bc53;
+  text-decoration: none;
+}
+
+.btn4 {
+  font-weight: bold;
+  color: #e02621;
+  font-size: 25px;
+  margin-left: 70%;
+}
+
+.miniMenu a:hover {
+  background-color: #c79924;
+}
+
+.horarios {
+  width: 100%;
+}
+
+.horarios img {
+  margin-left: 20%;
+  float: left;
+  margin-top: 15%;
+}
+
+table {
+  margin-top: 50px;
+  margin-left: 200px;
+  border-collapse: collapse;
+  float: left;
+  display: inline;
+  caption-side: bottom;
+  margin-bottom: 1%;
+}
+
+th {
+  background-color: #e5e5e5;
+  color: #f6ab1a;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+td {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+td,
+th {
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
