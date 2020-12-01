@@ -3,9 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { RutasComponent } from './rutas.component';
 import { Routes, RouterModule } from "@angular/router";
-import { HorariosComponent } from './horarios/horarios.component';
-import { TarifasComponent } from './tarifas/tarifas.component';
-import { ListaComponent } from './lista/lista.component';
 import { RutaComponent } from './ruta/ruta.component';
 
 const routes: Routes = [
@@ -41,6 +38,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RutasComponent, HorariosComponent, TarifasComponent, ListaComponent, RutaComponent]
+  declarations: [RutaComponent]
 })
 export class RutasModule { }

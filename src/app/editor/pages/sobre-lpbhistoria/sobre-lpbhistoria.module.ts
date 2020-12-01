@@ -16,4 +16,4 @@ const routes: Routes = [
   exports: [RouterModule],
   declarations: [SobreLPBhistoriaComponent]
 })
-export class HistoriaModule { }
+export class SobreLPBHistoriaModule { }
