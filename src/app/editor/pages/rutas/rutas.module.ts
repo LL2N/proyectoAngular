@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
-import { RutasComponent } from './rutas.component';
+import { RutasComponent } from "./rutas.component";
 import { Routes, RouterModule } from "@angular/router";
-import { RutaComponent } from './ruta/ruta.component';
+import { RutaComponent } from "./ruta/ruta.component";
 
 const routes: Routes = [
   {
@@ -13,11 +13,13 @@ const routes: Routes = [
       { path: "", redirectTo: "lista", pathMatch: "full" },
       {
         path: "lista",
-        loadChildren: () => import("./lista/lista.module").then(m => m.ListaModule)
+        loadChildren: () =>
+          import("./lista/lista.module").then(m => m.ListaModule)
       },
       {
         path: "horarios",
-        loadChildren: () => import("./horarios/horarios.module").then(m => m.HorariosModule)
+        loadChildren: () =>
+          import("./horarios/horarios.module").then(m => m.HorariosModule)
       },
       {
         path: "tarifas",
@@ -26,18 +28,14 @@ const routes: Routes = [
       },
       {
         path: "ruta",
-        loadChildren: () =>
-          import("./ruta/ruta.module").then(m => m.RutaModule)
+        loadChildren: () => import("./ruta/ruta.module").then(m => m.RutaModule)
       }
     ]
   }
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [RutaComponent]
+  imports: [CommonModule, RouterModule.forChild(routes)],
+  declarations: [RutasComponent]
 })
-export class RutasModule { }
+export class RutasModule {}
