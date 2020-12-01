@@ -3,7 +3,6 @@ import { CommonModule } from "@angular/common";
 
 import { RutasComponent } from "./rutas.component";
 import { Routes, RouterModule } from "@angular/router";
-import { RutaComponent } from "./ruta/ruta.component";
 
 const routes: Routes = [
   {
@@ -35,6 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+
   imports: [CommonModule, RouterModule.forChild(routes)],
   declarations: [RutasComponent]
 })
