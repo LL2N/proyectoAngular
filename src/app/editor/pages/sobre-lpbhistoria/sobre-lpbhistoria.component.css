@@ -1,0 +1,75 @@
+.content {
+vertical-align: top;
+  width: auto;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+.content .post {
+display: inline-table;
+  width: 23%;
+  height: auto;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: 30px solid #f44336;
+  white-space: normal;
+
+    
+}
+.content .post h2 {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #252525;
+}
+
+.content .post .date {
+  font-size: 15px;
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.content .post p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #554b4b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.content .post .image img {
+  width: 100%;
+  height: 200px;
+}
+.bnuevo {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: absolute;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-top: 1px;
+  margin-left: 60px;
+}
+.bnuevo:hover {
+  text-decoration: underline;
+}
+.beditar {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: static;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-left: 210px;
+}
+.beditar:hover {
+  text-decoration: underline;
+}
