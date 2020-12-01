@@ -10,12 +10,40 @@
       <form action="" #form="ngForm">
 
 
-        <input type="email" placeholder="Email" class="usuario" />
+        <input matInput
+               type="text"
+               name="email"
+               ngModel
+               #emailUI="ngModel"
+               required
+               placeholder="Email" 
+               class="usuario" />
+        <div *ngIf="emailUI.invalid && (emailUI.touched || emailUI.dirty)"
+             class="alert alert-danger">
+        <div *ngIf="emailUI.errors.required">
+          Email requerido
+          </div>
+        </div>
 
-        <input type="password" placeholder="Contraseña" class="pass" />
+        <input type="password" 
+              placeholder="Contraseña" 
+              class="pass"
+              matInput
+              name="password"
+              ngModel
+              #passwordUI="ngModel"
+              required />
 
-        <input type="submit" class="submit" value="Ingresar" />
+        <div *ngIf="passwordUI.invalid && (passwordUI.touched || passwordUI.dirty)"
+             class="alert alert-danger">
+          <div *ngIf="passwordUI.errors.required">
+            Contraseña requerida
+          </div>
+        </div>
+
+        
       </form>
+      <button type="submit" class="submit" value="Ingresar"  [disabled]="form.invalid" (click)="onLogin(form)"> </button>
     </div>
   </div>
 </div>
