@@ -1,0 +1,31 @@
+.btn1 {
+  margin-left: 220px;
+  width: 400px;
+  height: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #e4bc53;
+  text-decoration: none;
+}
+
+.btn2 {
+  margin-left: 90px;
+  width: 400px;
+  height: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  background-color: #e4bc53;
+  text-decoration: none;
+}
+
+.button2 a:hover {
+  background-color: #c79924;
+}
