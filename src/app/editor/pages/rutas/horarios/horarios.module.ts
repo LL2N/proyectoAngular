@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import {Routes, RouterModule} from '@angular/router';
-import { SobreLPBhistoriaComponent } from './sobre-lpbhistoria.component';
-
+import { HorariosComponent } from './horarios.component';
 
 const routes: Routes = [
-  {path: '', component: SobreLPBhistoriaComponent}
+  {path: '', component: HorariosComponent}
 ];
 
 @NgModule({
@@ -14,6 +12,6 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [SobreLPBhistoriaComponent]
+  declarations: [HorariosComponent]
 })
-export class HistoriaModule { }
+export class HorariosModule { }

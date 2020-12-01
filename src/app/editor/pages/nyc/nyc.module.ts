@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from "@angular/router";
-import { NYCComponent } from './nyc.component';
+import { NycComponent } from './nyc.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: NYCComponent,
+    component: NycComponent,
     children: [
       { path: "", redirectTo: "noticias", pathMatch: "full" },
       {
@@ -27,6 +27,6 @@ const routes: Routes = [
     RouterModule.forChild(routes) 
     
   ],
-  declarations: [NYCComponent]
+  declarations: [NycComponent]
 })
 export class NycModule { }
