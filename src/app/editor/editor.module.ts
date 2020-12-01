@@ -5,7 +5,8 @@ import { EditorComponent } from './editor.component';
 import { Routes, RouterModule } from "@angular/router";
 import { AuthGuard } from '../shared/guards/auth.guard';
 import { AuthService } from '../shared/services/auth.service';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from '../shared/interceptors/auth.interceptor';
 
 
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes), HttpClientModule],
   exports: [RouterModule],
   declarations: [EditorComponent],
   providers: [

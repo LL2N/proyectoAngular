@@ -20,7 +20,7 @@
                class="usuario" />
         <div *ngIf="emailUI.invalid && (emailUI.touched || emailUI.dirty)"
              class="alert alert-danger">
-        <div *ngIf="emailUI.errors.required">
+        <div *ngIf="emailUI.errors.required" style="color: red;">
           Email requerido
           </div>
         </div>
@@ -36,14 +36,14 @@
 
         <div *ngIf="passwordUI.invalid && (passwordUI.touched || passwordUI.dirty)"
              class="alert alert-danger">
-          <div *ngIf="passwordUI.errors.required">
+          <div *ngIf="passwordUI.errors.required" style="color: red;">
             Contraseña requerida
           </div>
         </div>
 
         
       </form>
-      <button type="submit" class="submit" value="Ingresar"  [disabled]="form.invalid" (click)="onLogin(form)"> </button>
+      <button type="submit" class="submit" value="Ingresar"  [disabled]="form.invalid" (click)="onLogin(form)"> Iniciar Sesion</button>
     </div>
   </div>
 </div>
