@@ -7,9 +7,13 @@
   <div class="login-container">
     <div class="register">
       <h2>Inicio Sesión</h2>
-      <form action="">
-        <input type="user" placeholder="Usuario" class="usuario" />
+      <form action="" #form="ngForm">
+
+
+        <input type="email" placeholder="Email" class="usuario" />
+
         <input type="password" placeholder="Contraseña" class="pass" />
+
         <input type="submit" class="submit" value="Ingresar" />
       </form>
     </div>
