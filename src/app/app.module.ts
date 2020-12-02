@@ -11,6 +11,7 @@ import { AuthInterceptor } from "./shared/interceptors/auth.interceptor";
 
 
 
+
 const routes: Routes = [
   { path: "", redirectTo: "pages", pathMatch: "full" },
   {
@@ -30,7 +31,7 @@ const routes: Routes = [
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule], 
   exports: [RouterModule],
-  declarations: [AppComponent ],
+  declarations: [AppComponent, FormNoticiaComponent, FormComunicadoComponent, FormHistoriaComponent ],
   bootstrap: [AppComponent],
   providers: [
     AuthService,
