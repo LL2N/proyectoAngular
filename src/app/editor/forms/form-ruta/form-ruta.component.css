@@ -1,0 +1,66 @@
+.fondo {
+  background: #e4bc53;
+}
+
+form {
+  font-size: 15px;
+  font-family: Arial;
+}
+
+.formulario {
+  border-radius: 150px;
+  width: 400px;
+  padding: 10%;
+  background-color: #dd9866;
+  margin: auto;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type="text"],
+form input[type="url"] {
+  font-size: 30px;
+  width: 80%;
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.submit {
+  width: 30%;
+  padding: 8px 16px;
+  margin-top: 5%;
+  border: 10px;
+  border-radius: 10px;
+  margin-left: 45%;
+  display: block;
+  color: #000;
+  background-color: #fbcf00;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.button {
+  width: 30%;
+  padding: 8px 16px;
+  margin-top: 1%;
+  margin-left: 45%;
+  border: 10px;
+  border-radius: 10px;
+  display: block;
+  color: #000;
+  background-color: #e02621;
+}
+
+.button:hover {
+  cursor: pointer;
+}
