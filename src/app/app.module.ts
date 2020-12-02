@@ -31,7 +31,7 @@ const routes: Routes = [
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule], 
   exports: [RouterModule],
-  declarations: [AppComponent, FormNoticiaComponent, FormComunicadoComponent, FormHistoriaComponent ],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [
     AuthService,
