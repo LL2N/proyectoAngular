@@ -7,6 +7,7 @@ import { AuthGuard } from '../shared/guards/auth.guard';
 import { AuthService } from '../shared/services/auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from '../shared/interceptors/auth.interceptor';
+import { FormsComponent } from './forms/forms.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,12 @@ const routes: Routes = [
         path: 'pages',
         loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
         canActivate: [AuthGuard]
-  }
+      },
+      {
+        path: 'forms',
+        loadChildren: () => import('./forms/forms.module').then(m => m.FormsModule),
+        canActivate: [AuthGuard]
+      }
     ]
   }
   
