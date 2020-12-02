@@ -8,9 +8,7 @@ import { AuthService } from "./shared/services/auth.service";
 import { AuthGuard } from "./shared/guards/auth.guard";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { AuthInterceptor } from "./shared/interceptors/auth.interceptor";
-import { FormNoticiaComponent } from './form-noticia/form-noticia.component';
-import { FormComunicadoComponent } from './form-comunicado/form-comunicado.component';
-import { FormHistoriaComponent } from './form-historia/form-historia.component';
+
 
 
 
