@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.authService.verifyLogged()) {
-      this.router.navigate(['pages']);
+      this.router.navigate(['editor/pages']);
     }
   }
 
