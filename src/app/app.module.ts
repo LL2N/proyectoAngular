@@ -8,6 +8,11 @@ import { AuthService } from "./shared/services/auth.service";
 import { AuthGuard } from "./shared/guards/auth.guard";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { AuthInterceptor } from "./shared/interceptors/auth.interceptor";
+import { NoticiasService } from "./shared/services/noticias.service";
+import { ComunicadosService } from "./shared/services/comunicados.service";
+import { HistoriasService } from "./shared/services/historias.service";
+import { HorariosService } from "./shared/services/horarios.service";
+import { RutasService } from "./shared/services/rutas.service";
 
 
 
@@ -40,7 +45,13 @@ const routes: Routes = [
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }
+    },
+    ComunicadosService,
+    NoticiasService,
+    HistoriasService,
+    HorariosService,
+    RutasService,
+    Tari
   ]
 })
 export class AppModule {}
