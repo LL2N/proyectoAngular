@@ -1,7 +1,7 @@
- <table>
+ <table *ngFor="let tarifa of tarifas">
         <tr>
-            <th> <img src="https://www.flaticon.es/svg/static/icons/svg/3084/3084418.svg" width="50px" height="50px"></th>
-            <th>Usuario Regular</th> 
+            <th> <img [src]="tarifa.imageUrl" width="50px" height="50px"></th>
+            <th>{{tarifa.titulo}}</th> 
         </tr>
 
         <tr>
@@ -9,81 +9,22 @@
             <th> Bs </th>
             <th> Nocturno</th>
         </tr>
-
+        
         <tr>
             <td>Efectivo</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
+            <td> {{tarifa.efectivoDiurno}} </td>
+            <td> {{tarifa.efectivoNocturno}}</td>
 
         </tr>
 
         <tr>
             <td>Tarjeta</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
+            <td> {{tarifa.tarjetaDiurno}} </td>
+            <td> {{tarifa.tarjetaNocturno}}</td>
         </tr>
         
         
 
     </table>
 
-    <table>
-        <tr>
-            <th> <img src="https://www.flaticon.es/svg/static/icons/svg/3084/3084424.svg" width="50px" height="50px"></th>
-            <th>Usuario Preferencial</th>
-        
-            
-        </tr>
-
-        <tr>
-            <th>Diurno</th>
-            <th> Bs </th>
-            <th> Nocturno</th>
-        </tr>
-
-        <tr>
-            <td>Efectivo</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
-
-        </tr>
-
-        <tr>
-            <td>Tarjeta</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
-
-        </tr>
-
-    </table>
-
-    
-    <table>
-        <tr>
-            <th> <img src="https://www.flaticon.es/svg/static/icons/svg/2620/2620135.svg" width="50px" height="50px"></th>
-            <th>Usuario Universitario</th>
-        
-            
-        </tr>
-
-        <tr>
-            <th>Diurno</th>
-            <th> Bs </th>
-            <th> Nocturno</th>
-        </tr>
-
-        <tr>
-            <td>Efectivo</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
-
-        </tr>
-
-        <tr>
-            <td>Tarjeta</td>
-            <td> 1.50 </td>
-            <td> 3.00</td>
-
-        </tr>
-
-    </table>
+   

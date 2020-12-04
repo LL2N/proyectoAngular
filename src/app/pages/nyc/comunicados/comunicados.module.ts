@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {Routes, RouterModule} from '@angular/router';
 import { ComunicadosComponent } from './comunicados.component';
+import { ComunicadosService } from '../../../shared/services/comunicados.service';
 
 const routes: Routes = [
   {path: '', component: ComunicadosComponent}
@@ -13,6 +14,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [ComunicadosComponent]
+  declarations: [ComunicadosComponent],
+  providers: [ComunicadosService] 
 })
 export class ComunicadosModule { }

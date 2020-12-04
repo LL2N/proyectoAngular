@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NoticiasService } from '../../../shared/services/noticias.service';
 
 @Component({
   selector: 'app-noticias',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasComponent implements OnInit {
 
-  constructor() { }
+  noticias = [];
+
+  constructor(private NoticiasService: NoticiasService) { 
+    
+  }
 
   ngOnInit() {
+    this.NoticiasService.getNoticias().subscribe( res => {
+      Object.entries(res).map(noticia => this.noticias.push(noticia[1]))
+    }
+
+    )
   }
 
 }

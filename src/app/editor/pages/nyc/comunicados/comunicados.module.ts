@@ -13,6 +13,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [ComunicadosComponent]
+  declarations: [ComunicadosComponent],
+  providers: [ComunicadosService] 
 })
 export class ComunicadosModule { }

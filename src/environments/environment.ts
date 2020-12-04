@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   app: {
-    apiBaseUrl: 'https://proyectol.firebaseio.com'
+    apiBaseUrl: 'https://proyectolpb2020.firebaseio.com'
   },
   auth: {
     apiBaseUrl: 'https://identitytoolkit.googleapis.com',

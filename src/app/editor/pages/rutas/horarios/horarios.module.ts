@@ -12,6 +12,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [HorariosComponent]
+  declarations: [HorariosComponent],
+  providers: [HorariosService]
 })
 export class HorariosModule { }

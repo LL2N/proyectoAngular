@@ -13,6 +13,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [TarifasComponent]
+  declarations: [TarifasComponent],
+  providers: [TarifasService]
 })
 export class TarifasModule { }

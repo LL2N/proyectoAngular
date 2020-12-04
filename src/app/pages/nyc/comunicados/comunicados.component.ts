@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComunicadosService } from '../../../shared/services/comunicados.service';
 
 @Component({
   selector: 'app-comunicados',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComunicadosComponent implements OnInit {
 
-  constructor() { }
+  comunicados = [];
+
+  constructor(private ComunicadosService: ComunicadosService) { 
+    
+  }
 
   ngOnInit() {
+    this.ComunicadosService.getComunicados().subscribe( res => {
+      Object.entries(res).map(comunicado => this.comunicados.push(comunicado[1]))
+    }
+
+    )
   }
 
 }
