@@ -1,14 +1,17 @@
-	<h1 style="margin-left:10%;margin-top:50px;color:white;">ÚLTIMOS COMUNICADOS</h1>
+<h1 style="margin-left:10%;margin-top:50px;color:white;">ÚLTIMOS COMUNICADOS</h1>
 
-	<button class="bnuevo">+ Nuevo</button>
-	<div class="content">
-		<div *ngFor="let comunicado of comunicados" class="post">
-           <button class="beditar">Editar</button>
+<button class="bnuevo">+ Nuevo</button>
+<div class="content">
+	<div *ngFor="let comunicado of comunicados" class="post">
+		<button class="beliminar">Eliminar</button>
+		<button class="beditar">Editar</button>
 
 
 
-			<p class="date">{{comunicado.fecha}}</p>
-			<p>{{comunicado.texto}}</p>
-		</div>
 
+
+		<p class="date">{{comunicado.fecha}}</p>
+		<p>{{comunicado.texto}}</p>
 	</div>
+
+</div>

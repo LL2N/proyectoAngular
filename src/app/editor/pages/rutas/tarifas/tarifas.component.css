@@ -139,3 +139,18 @@ th {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.beliminar {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: absolute;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  
+  margin-left: 500px;
+}
+.beliminar:hover {
+  text-decoration: underline;
+}
