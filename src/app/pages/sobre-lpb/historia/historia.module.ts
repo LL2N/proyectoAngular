@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {Routes, RouterModule} from '@angular/router';
 import { HistoriaComponent } from './historia.component';
+import { HistoriasService } from '../../../shared/services/historias.service';
 
 const routes: Routes = [
   {path: '', component: HistoriaComponent}
@@ -13,6 +14,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [HistoriaComponent]
+  declarations: [HistoriaComponent],
+  providers: [HistoriasService]
 })
 export class HistoriaModule { }

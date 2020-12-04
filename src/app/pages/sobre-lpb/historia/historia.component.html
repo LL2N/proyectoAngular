@@ -1,37 +1,14 @@
 	<div class="content">
 
-			<div class="post">
+			<div *ngFor="let historia of historias" class="post">
 				<div class="image">
-					<h2 style="text-align:center;">2013</h2>
-					<img src="https://www.elpaisonline.com/media/k2/items/cache/096c7dc7c3ec4d698e6a290150dbc1f3_XL.jpg?t=-62169984000"></div>
+					<h2 style="text-align:center;">{{historia.anio}}</h2>
+					<img [src]="historia.imageUrl"></div>
 
-					<p>Se crea el SETRAM y llega el primer Pumakatari. El 9 de julio se presenta el bus prototipo</p>
+					<p>{{historia.texto}}</p>
 
 				</div>
-        <div class="post">
-			<div class="image">
-        <h2 style="text-align:center;" >2014</h2>
-					<img src="https://amn.bo/archivo/images/stories/joomlart/reportajes/pumakatari/car_puma_katari26.jpg"></div>	
-          
-				<p>El 5 de enero los buses entran en caravana a La Paz. El 24 de febrero se inauguran las rutas Inca Llojeta y Villa Salomé. La tercera ruta es chasquipampa y arranca el 7 de marzo.</p>
-			
-			</div>
-      <div class="post">
-			<div class="image">
-        <h2 style="text-align:center;" >2015</h2>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-j8jbyDdyNQhQCe-vInQWHBKRtRipadiWTQ&usqp=CAU"></div>	
-          
-				<p>El pumakatari cumple un año de servicio. Se fabrican 80 nuevos buses para atender más rutas</p>
-			
-			</div>
-      <div class="post">
-			<div class="image">
-        <h2 style="text-align:center;" >2016</h2>
-					<img src="https://lh3.googleusercontent.com/proxy/FHSdP2uTwS78-AHoFhjRxTu9Dke-DuAO67deN873HiC-Ujo2ufQHYXkVdWTWrlVyYZxJOdDpxakE-Tb1GE-OP65XxMRb7saxoGr7Awvk_u50BCOqT00"></div>	
-          
-				<p>El 15 de mayo se realiza la segunda caravana de 80 buse pumakatari. El 23 de mayo se inaugura la ruta de caja Ferroviaria. El 23 de julio se inaugura la ruta de Kalajahuira. El 15 de julio se inaugura la Estación de Transferencia La Paz BUS.</p>
-			
-			</div>
+        
     
 
 			</div>

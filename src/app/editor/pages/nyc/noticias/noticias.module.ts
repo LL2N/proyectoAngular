@@ -12,6 +12,7 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [NoticiasComponent]
+  declarations: [NoticiasComponent],
+  providers: [NoticiasService] 
 })
 export class NoticiasModule { }
