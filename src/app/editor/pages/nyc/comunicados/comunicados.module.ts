@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {Routes, RouterModule} from '@angular/router';
 import { ComunicadosComponent } from './comunicados.component';
+import { ComunicadosService } from '../../../../shared/services/comunicados.service';
 
 const routes: Routes = [
   {path: '', component: ComunicadosComponent}
