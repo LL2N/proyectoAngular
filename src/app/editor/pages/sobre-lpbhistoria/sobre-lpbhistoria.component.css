@@ -1,11 +1,11 @@
 .content {
-vertical-align: top;
+  vertical-align: top;
   width: auto;
   overflow: auto;
   white-space: nowrap;
 }
 .content .post {
-display: inline-table;
+  display: inline-table;
   width: 23%;
   height: auto;
   padding: 20px;
@@ -15,8 +15,6 @@ display: inline-table;
   background-color: #fff;
   border: 30px solid #f44336;
   white-space: normal;
-
-    
 }
 .content .post h2 {
   font-size: 30px;
@@ -70,5 +68,19 @@ display: inline-table;
   margin-left: 210px;
 }
 .beditar:hover {
+  text-decoration: underline;
+}
+.beliminar {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: static;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-left: 210px;
+}
+.beliminar:hover {
   text-decoration: underline;
 }

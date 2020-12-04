@@ -138,9 +138,24 @@
   border: none;
   cursor: pointer;
   background: none;
-margin-top: 70px;
-  margin-left: 960px;
+  margin-top: 60px;
+  margin-left: 770px;
 }
 .beditar:hover {
+  text-decoration: underline;
+}
+.beliminar {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: absolute;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-top: 60px;
+  margin-left: 900px;
+}
+.beliminar:hover {
   text-decoration: underline;
 }

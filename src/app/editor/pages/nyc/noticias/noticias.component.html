@@ -1,17 +1,15 @@
-	<h1 style="margin-left:10%;margin-top:50px;color:white;">ÚLTIMAS NOTICIAS</h1>
-  <button class="bnuevo">+ Nuevo</button>
+<h1 style="margin-left:10%;margin-top:50px;color:white;">ÚLTIMAS NOTICIAS</h1>
+<button class="bnuevo">+ Nuevo</button>
 
-	<div class="content">
+<div class="content">
 
-		<div *ngFor="let noticia of noticias" class="post">
-			<div class="image">
-				<img [src]="noticia.imageUrl" /></div>
-				<button class="beditar">Editar</button>
-				<h2>{{noticia.titulo}}</h2>
-				<p class="date">{{noticia.fecha}}</p>
-				<p>{{noticia.texto}}</p>
+	<div *ngFor="let noticia of noticias" class="post">
+		<div class="image">
+			<img [src]="noticia.imageUrl" /></div>
+			<button class="beliminar">Eliminar</button>
+			<button class="beditar">Editar</button>
+			<h2>{{noticia.titulo}}</h2>
+			<p class="date">{{noticia.fecha}}</p>
+			<p>{{noticia.texto}}</p>
 		</div>
-
 	</div>
-						
-			
