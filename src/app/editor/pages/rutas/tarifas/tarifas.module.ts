@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {Routes, RouterModule} from '@angular/router';
 import { TarifasComponent } from './tarifas.component';
+import { TarifasService } from '../../../../shared/services/tarifas.service';
 
 const routes: Routes = [
   {path: '', component: TarifasComponent}
