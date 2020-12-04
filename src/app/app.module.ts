@@ -13,6 +13,7 @@ import { ComunicadosService } from "./shared/services/comunicados.service";
 import { HistoriasService } from "./shared/services/historias.service";
 import { HorariosService } from "./shared/services/horarios.service";
 import { RutasService } from "./shared/services/rutas.service";
+import { TarifasService } from "./shared/services/tarifas.service";
 
 
 
@@ -39,19 +40,13 @@ const routes: Routes = [
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [
-    AuthService,
-    AuthGuard,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true
-    },
+    
     ComunicadosService,
     NoticiasService,
     HistoriasService,
     HorariosService,
     RutasService,
-    Tari
+    TarifasService
   ]
 })
 export class AppModule {}
