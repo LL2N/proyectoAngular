@@ -4,12 +4,8 @@ import { FormComunicadoComponent } from './form-comunicado.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComunicadosService } from '../../../shared/services/comunicados.service';
-
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {MatIconModule} from '@angular/material/icon';
 
 
 const routes: Routes = [
