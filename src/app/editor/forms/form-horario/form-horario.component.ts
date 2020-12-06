@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { HorariosService } from '../../../shared/services/horarios.service';
 
 @Component({
   selector: 'app-form-horario',
@@ -6,10 +10,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-horario.component.css']
 })
 export class FormHorarioComponent implements OnInit {
-
-  constructor() { }
+  horarioSubs: Subscription;
+  horarioForm: FormGroup;
+  
+  constructor(private router: Router, private horariosService: HorariosService, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.horarioForm = this.formBuilder.group({
+      horario: ['', [Validators.required]],
+      frecuencia: ['', [Validators.required]]
+    });
+  }
+
+    onCancel(){
+    this.router.navigate(['editor/pages//rutas/horarios']);
+  }
+  onCreate(form: any): void {
+    console.log('FORM: ', this.horarioForm.value);
+
+      this.horarioSubs = this.horariosService.addHorario({
+      ...this.horarioForm.value
+    }).subscribe(
+      ()  => {
+      this.onCancel();
+    }
+    );
   }
 
 }

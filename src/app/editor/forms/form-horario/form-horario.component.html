@@ -1,28 +1,28 @@
 <div class="fondo">
 	<div class="formulario">
 
-		<form action="">
+		<form action="" [formGroup]="horarioForm">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/La_Paz_Bus_logo.svg/1019px-La_Paz_Bus_logo.svg.png" height="150px" width="150px">
 			<h1>Añadir Nuevo Horario</h1>
 			<section id="llenado">
 				<p>
 
 					<label for="name">Horario</label>
-					<input type="text" name="titulo" id ="name">
+					<input type="text" formControlName="horario" id ="name">
 			</p>
 
 
 					<p>
 						<label for="efectivo">Frecuencia</label>
-						<input type="text" name="Efectivo" id ="efectivo">
+						<input type="text" formControlName="frecuencia" id ="efectivo">
 			</p>
 
 
 			</section>
 		</form>
 
-		<button class="submit">Publicar</button>
-		<button class="button">Cancelar</button>
+		<button class="submit" (click)="onCreate(form)">Publicar</button>
+		<button class="button"(click)="onCancel()">Cancelar</button>
 
 	</div>
 </div>
