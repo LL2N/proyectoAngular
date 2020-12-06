@@ -12,6 +12,9 @@ const routes: Routes = [
     CommonModule, RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [FormHorarioComponent]
+  declarations: [FormHorarioComponent],
+  providers: [
+    HistoriasService
+  ]
 })
 export class FormHorarioModule { }
