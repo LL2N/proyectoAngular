@@ -27,12 +27,12 @@ comunicadoForm: FormGroup;
     this.router.navigate(['editor/pages/nyc/comunicados']);
   }
   onCreate(form: any): void {
-    console.log('FORM: ', form.value);
+    console.log('FORM: ', this.comunicadoForm.value);
 
       this.comunicadoSubs = this.comunicadosService.addComunicado({
       ...this.comunicadoForm.value
     }).subscribe(
-      res => {
+      ()  => {
       this.onCancel();
     }
     );

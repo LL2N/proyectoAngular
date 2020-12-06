@@ -6,22 +6,23 @@
 			COMUNICADO
 		</h1>
 
-    <button class="btn1" (click)="onCancel()">Cancelar</button>
-    <button class="btn2" (click)="onCreate(form)">Publicar</button>
 
 	</div>
 		<div class="contenedor1">
 			<div class="login-container">
 				<div class="register">
 					<h2>Contenido del Comunicado</h2><br>
-					<form action="">
-						<label for="fecha">Fecha</label>
-						<input type="text" id="fecha" name="fecha" required/>
+					<form action="" [formGroup]="comunForm">
+						<label for="date">Fecha</label>
+						<input type="text" id="fecha" formControlName="fecha" required/>
 
 						<label for="text">Texto</label>
-						<textarea id="text" name="texto" required></textarea>
+						<textarea id="text" formControlName="texto" required></textarea>
 					</form>
 				</div>
 			</div>
 		</div>
+    
+    <button class="btn1" (click)="onCancel()">Cancelar</button>
+    <button class="btn2" (click)="onCreate(form)">Publicar</button>
 	</div>
