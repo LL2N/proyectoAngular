@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HorariosService } from '../../../../shared/services/horarios.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { HorariosService } from '../../../../shared/services/horarios.service';
 export class HorariosComponent implements OnInit {
   horarios = [];
 
-  constructor(private HorariosService: HorariosService) { 
+  constructor(private HorariosService: HorariosService, private router: Router) { 
     
   }
 
@@ -19,6 +20,9 @@ export class HorariosComponent implements OnInit {
     }
 
     )
+  }
+    openForm(){
+    this.router.navigate(['editor/forms/formhorario']);
   }
 
 }
