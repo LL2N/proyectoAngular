@@ -1,26 +1,31 @@
 <div class="fondo">
 	<div class="formulario">
-		<form action="">
+		<form action="" [formGroup]="rutaForm">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/La_Paz_Bus_logo.svg/1019px-La_Paz_Bus_logo.svg.png" height="150px" width="150px">
 			<h1>Añadir Nueva Ruta</h1>
 			<section id="llenado">
 				<p>
 
 					<label for="name"> Nombre de la Ruta</label>
-					<input type="text" name="titulo" id ="name">
+					<input type="text" formControlName="nombre" id ="name">
 			</p>
 
 					<p>
 						<label for="imRuta"> Url de la Imagen</label>
-						<input type="url" name="imagenRuta" id ="imRuta">
+						<input type="url" formControlName="imageUrl" id ="imRuta">
+			</p>
+
+      <p>
+						<label for="imRuta"> Url del video</label>
+						<input type="url" formControlName="videoUrl">
 			</p>
 
 
 			</section>
 		</form>
 
-		<button class="submit">Publicar</button>
-		<button class="button">Cancelar</button>
+		<button class="submit" (click)="onCreate(form)">Publicar</button>
+		<button class="button" (click)="onCancel()">Cancelar</button>
 
 	</div>
 </div>

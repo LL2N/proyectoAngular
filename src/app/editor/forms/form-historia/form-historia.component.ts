@@ -18,7 +18,7 @@ export class FormHistoriaComponent implements OnInit {
   ngOnInit() {
             this.historiaForm = this.formBuilder.group({
       anio: ['', [Validators.required]],
-      image: ['', [Validators.required]],
+      imageUrl: ['', [Validators.required]],
       texto: ['', [Validators.required, Validators.minLength(3)]]
     });
   }

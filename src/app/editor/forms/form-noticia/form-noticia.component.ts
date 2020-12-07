@@ -18,7 +18,7 @@ export class FormNoticiaComponent implements OnInit {
 
   ngOnInit() {
     this.noticiaForm = this.formBuilder.group({
-      image: ['', [Validators.required]],
+      imageUrl: ['', [Validators.required]],
       titulo: ['', [Validators.required]],
       fecha: ['', [Validators.required]],
       texto: ['', [Validators.required]]
