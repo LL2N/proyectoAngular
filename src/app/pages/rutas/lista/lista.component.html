@@ -1,7 +1,7 @@
 <div class="fondoBajo">
   <div *ngFor="let ruta of rutas">
 	<img src="https://www.lapazdigital.net/images/enlaces/lapazbus.png" height="150px" width="150px">
-  <p>{{ruta.nombre}} </p>
+  <p (click)="goRuta()">{{ruta.nombre}} </p>
   </div>
 
 </div>
