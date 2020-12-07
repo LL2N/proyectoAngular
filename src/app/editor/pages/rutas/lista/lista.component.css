@@ -4,6 +4,20 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+ .fondoBajo img {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+p {
+  position: absolute;
+  font-size: 35px;
+  margin-top: 15%;
+  margin-left: 80px;
+  display: inline-block;
+
+}
 .bnuevo {
   float: right;
   font-weight: bold;
@@ -112,7 +126,4 @@ body {
   background-color: #c79924;
 }
 
-.fondoBajo img {
-  margin: 200px;
-  margin-bottom: 10%;
-}
+

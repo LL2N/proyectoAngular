@@ -8,6 +8,20 @@
   body{
         background: #E6C779;
   }
+   .fondoBajo img {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+p {
+  position: absolute;
+  font-size: 35px;
+  margin-top: 15%;
+  margin-left: 80px;
+  display: inline-block;
+
+}
 
   .topFondo img {
   margin: 25px
@@ -94,9 +108,7 @@
 }
 
 
-  .fondoBajo img {
-    margin: 200px;
-  }
+
 
   
 
