@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RutasService } from '../../../shared/services/rutas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista',
@@ -10,7 +11,7 @@ export class ListaComponent implements OnInit {
 
   rutas = [];
 
-  constructor(private RutasService: RutasService) { 
+  constructor(private RutasService: RutasService, private router: Router) { 
     
   }
 
@@ -20,6 +21,11 @@ export class ListaComponent implements OnInit {
     }
 
     )
+  }
+  
+  
+    goRuta(){
+    this.router.navigate(['pages/rutas/ruta']);
   }
 
 
