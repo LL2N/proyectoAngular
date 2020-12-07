@@ -1,40 +1,40 @@
 <div class="fondo">
 	<div class="formulario">
-		<form action="">
+		<form action="" [formGroup]="tarifaForm">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/La_Paz_Bus_logo.svg/1019px-La_Paz_Bus_logo.svg.png" height="150px" width="150px">
 			<h1>Añadir Nueva Tarifa</h1>
 			<section id="llenado">
 
 
 				<label for="name">Título Tarifa</label>
-				<input type="text" name="titulo" id ="name">
+				<input type="text" formControlName="titulo" id ="name">
 
 
 
 				<label for="imTarifa"> Url de la Imagen</label>
-				<input type="url" name="imagenTarifa" id ="imTarifa">
+				<input type="url" formControlName="imageUrl" id ="imTarifa">
 
 
 
 				<h3> Diurno: </h3>
 				<label for="efectivo">Efectivo</label>
-				<input type="text" name="Efectivo" id ="efectivo">
+				<input type="text" formControlName="efectivoDiurno" id ="efectivo">
 
 
 
 				<label for="tarjeta"> Tarjeta</label>
-				<input type="text" name="Tarjeta" id ="tarjeta">
+				<input type="text" formControlName="tarjetaDiurno" id ="tarjeta">
 
 
 
 				<h3> Nocturno: </h3>
 				<label for="efectivo2">Efectivo</label>
-				<input type="text" name="efectivo2" id="efectivo2">
+				<input type="text" formControlName="efectivoNocturno" id="efectivo2">
 
 
 
 				<label for="tarjeta2"> Tarjeta</label>
-				<input type="text" name="Tarjeta2" id ="tarjeta2">
+				<input type="text" formControlName="tarjetaNocturno" id ="tarjeta2">
 
 
 
@@ -42,8 +42,8 @@
 		</form>
 
 
-		<button class="submit">Publicar</button>
-		<button class="button">Cancelar</button>
+		<button class="submit" (click)="onCreate(form)">Publicar</button>
+		<button class="button" >Cancelar</button>
 
 	</div>
 </div>

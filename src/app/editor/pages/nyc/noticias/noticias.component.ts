@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NoticiasService } from '../../../../shared/services/noticias.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class NoticiasComponent implements OnInit {
 
   noticias = [];
 
-  constructor(private NoticiasService: NoticiasService) { 
+  constructor(private NoticiasService: NoticiasService, private router: Router) { 
     
   }
 
@@ -20,5 +21,9 @@ export class NoticiasComponent implements OnInit {
     }
 
     )
+  }
+
+  openForm(){
+    this.router.navigate(['editor/forms/formnoticia']);
   }
 }

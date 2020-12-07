@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RutasService } from '../../../../shared/services/rutas.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class ListaComponent implements OnInit {
 
   rutas = [];
 
-  constructor(private RutasService: RutasService) { 
+  constructor(private RutasService: RutasService, private router: Router) { 
     
   }
 
@@ -20,6 +21,10 @@ export class ListaComponent implements OnInit {
     }
 
     )
+  }
+
+  openForm(){
+    this.router.navigate(['editor/forms/formruta']);
   }
 
 }

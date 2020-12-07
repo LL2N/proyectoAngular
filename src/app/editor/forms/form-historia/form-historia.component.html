@@ -6,21 +6,21 @@
 		</h1>
 
 	
-    <button class="btn1">Cancelar</button>
-    <button class="btn2">Publicar</button>
+    <button class="btn1" (click)="onCancel()">Cancelar</button>
+    <button class="btn2" (click)="onCreate(form)">Publicar</button>
 
 	</div>
 		<div class="contenedor1">
 			<div class="login-container">
 				<div class="register">
 					<h2>Contenido de la Historia</h2><br>
-					<form action="">
+					<form action="" [formGroup]="historiaForm">
             <label for="year">Año</label>
-						<input type="text" id="fecha" name="date_new">
+						<input type="text" id="fecha" formControlName="anio">
 						<label for="img">Imagen</label>
-						<input type="url" id="imagen" name="img_new">
+						<input type="url" id="imagen" formControlName="imageUrl">
 						<label for="text">Texto</label>
-						<textarea id="info" name="info_new"></textarea>
+						<textarea id="info" formControlName="texto"></textarea>
 					</form>
 				</div>
 			</div>

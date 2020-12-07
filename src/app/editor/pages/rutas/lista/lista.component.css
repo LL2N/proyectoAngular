@@ -4,6 +4,21 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+.bnuevo {
+  float: right;
+  font-weight: bold;
+  color: #e02621;
+  position: absolute;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-top: 1px;
+  margin-left: 60px;
+}
+.bnuevo:hover {
+  text-decoration: underline;
+}
 
 body {
   background: #e6c779;

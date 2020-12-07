@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TarifasService } from '../../../../shared/services/tarifas.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class TarifasComponent implements OnInit {
 
   tarifas = [];
 
-  constructor(private TarifasService: TarifasService) { 
+  constructor(private TarifasService: TarifasService, private router: Router) { 
     
   }
 
@@ -20,6 +21,10 @@ export class TarifasComponent implements OnInit {
     }
 
     )
+  }
+
+  openForm(){
+    this.router.navigate(['editor/forms/formtarifa']);
   }
 
 
