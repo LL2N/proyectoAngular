@@ -113,6 +113,15 @@ body {
 }
 
 .fondoBajo img {
-  margin: 200px;
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 10%;
   margin-bottom: 10%;
+}
+p {
+  position: absolute;
+  font-size: 35px;
+  margin-top: 15%;
+  margin-left: 80px;
+  display: inline-block;
 }
