@@ -8,13 +8,13 @@
 			<section id="llenado">
 				<p>
 
-					<label for="name">Usuario</label>
-					<input type="text" name="user" id ="name">
+					<label for="name">Email</label>
+					<input type="text"  #email>
 			</p>
 
 					<p>
 						<label for="con"> Contraseña</label>
-						<input type="text" name="con" id ="con">
+						<input type="text" #password>
 			</p>
 
 
@@ -23,8 +23,8 @@
 		</form>
 
 
-		<button class="submit">Agregar</button>
-		<button class="button">Cancelar</button>
+		<button class="submit" (click)="onCreate(email.value,password.value)">Agregar</button>
+		<button class="button" (click)="onCancel()">Cancelar</button>
 
 	</div>
 </div>

@@ -15,7 +15,8 @@ const routes: Routes = [
       {path: 'formtarifa', loadChildren: () => import('./form-tarifa/form-tarifa.module').then(m => m.FormTarifaModule)},
       {path: 'formhorario', loadChildren: () => import('./form-horario/form-horario.module').then(m => m.FormHorarioModule)},
       {path: 'formnoticia', loadChildren: () => import('./form-noticia/form-noticia.module').then(m => m.FromNoticiaModule)},
-      {path: 'formcomunicado', loadChildren: () => import('./form-comunicado/form-comunicado.module').then(m => m.FormComunicadoModule)}
+      {path: 'formcomunicado', loadChildren: () => import('./form-comunicado/form-comunicado.module').then(m => m.FormComunicadoModule)},
+      {path: 'formusuario', loadChildren: () => import('./form-usuario/form-usuario.module').then(m => m.FormUsuarioModule)}
     ]
   }
 ];
@@ -24,6 +25,6 @@ const routes: Routes = [
   imports: [
     CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations: [FormsComponent, FormUsuarioComponent]
+  declarations: [FormsComponent]
 })
 export class FormsModule { }
