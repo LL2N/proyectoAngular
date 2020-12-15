@@ -10,7 +10,9 @@ const routes: Routes = [
       {path: '', redirectTo: 'nyc', pathMatch: 'full'},
       {path: 'nyc', loadChildren: () => import('./nyc/nyc.module').then(m => m.NycModule)},
       {path: 'rutas', loadChildren: () => import('./rutas/rutas.module').then(m => m.RutasModule)},
-      {path: 'sobrelpb', loadChildren: () => import('./sobre-lpbhistoria/sobre-lpbhistoria.module').then(m => m.SobreLPBHistoriaModule)}
+      {path: 'sobrelpb', loadChildren: () => import('./sobre-lpbhistoria/sobre-lpbhistoria.module').then(m => m.SobreLPBHistoriaModule)},
+      {path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)}
+      
     ]
   }
 ];
