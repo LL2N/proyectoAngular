@@ -22,4 +22,7 @@ export class FirebaseService {
     this.firebaseAuth.signOut()
     localStorage.removeItem('user')
   }
+  getUsuarios(){
+    
+  }
 }
