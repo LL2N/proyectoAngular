@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../../../../shared/services/auth.service';
 import { ComunicadosService } from '../../../../shared/services/comunicados.service';
 
 @Component({
@@ -10,17 +12,45 @@ import { ComunicadosService } from '../../../../shared/services/comunicados.serv
 export class ComunicadosComponent implements OnInit {
 
   comunicados = [];
+  
+  comunicadoSubs: Subscription;
+  comunicadoGetSubs: Subscription;
+  comunicadoDeleteSubs: Subscription;
+  comunicadoUpdateSubs: Subscription;
 
-  constructor(private ComunicadosService: ComunicadosService, private router: Router) { 
+  constructor(private ComunicadosService: ComunicadosService, private router: Router,
+              private authService: AuthService) { 
     
   }
 
   ngOnInit() {
-    this.ComunicadosService.getComunicados().subscribe( res => {
+
+    this.loadProduct();
+
+    
+  }
+
+  loadProduct(): void {
+    this.comunicados = [];
+    const userId = this.authService.getUserId();
+    this.comunicadoGetSubs = this.ComunicadosService.getComunicados().subscribe( res => {
       Object.entries(res).map(comunicado => this.comunicados.push(comunicado[1]))
     }
 
     )
+  }
+
+  onDelete(id: any): void {
+    console.log('RESPONSE: ', id);
+    this.comunicadoDeleteSubs = this.ComunicadosService.deleteComunicado(id.id).subscribe(
+      res => {
+        console.log('RESPONSE: ', res);
+        this.loadProduct();
+      },
+      err => {
+        console.log('ERROR: ');
+      }
+    );
   }
 
   openForm(){
