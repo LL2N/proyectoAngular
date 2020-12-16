@@ -7,22 +7,10 @@
       Lista de Editores
     </h1>
 
-    <div class="editor">
-      <p class="edit">Editor 1</p>
+    <div class="editor" *ngFor="let usuario of usuarios | async">
+      <p class="edit">{{usuario.nick}}</p>
       <button class="delete">ELIMINAR</button>
     </div>
-    <div class="editor">
-      <p class="edit">Editor 2</p>
-      <button class="delete">ELIMINAR</button>
-    </div>
-    <div class="editor">
-      <p class="edit">Editor 3</p>
-      <button class="delete">ELIMINAR</button>
-    </div>
-    <div class="editor">
-      <p class="edit">Editor 4</p>
-      <button class="delete">ELIMINAR</button>
-    </div>
-  </div>
+
 
 </div>

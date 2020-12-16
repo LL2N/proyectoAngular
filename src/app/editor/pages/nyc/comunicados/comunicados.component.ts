@@ -31,10 +31,9 @@ export class ComunicadosComponent implements OnInit {
   }
 
   loadProduct(): void {
-    this.comunicados = [];
-    const userId = this.authService.getUserId();
+    this.comunicados = [];}
     this.comunicadoGetSubs = this.ComunicadosService.getComunicados().subscribe( res => {
-      Object.entries(res).map(comunicado => this.comunicados.push(comunicado[1]))
+      Object.entries(res).map((p: any) => this.comunicados.push({id: p[0], ...p[1]}));
     }
 
     )
@@ -42,7 +41,7 @@ export class ComunicadosComponent implements OnInit {
 
   onDelete(id: any): void {
     console.log('RESPONSE: ', id);
-    this.comunicadoDeleteSubs = this.ComunicadosService.deleteComunicado(id.id).subscribe(
+    this.comunicadoDeleteSubs = this.ComunicadosService.deleteComunicado(id).subscribe(
       res => {
         console.log('RESPONSE: ', res);
         this.loadProduct();

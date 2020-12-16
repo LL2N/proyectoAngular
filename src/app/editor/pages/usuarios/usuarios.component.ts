@@ -11,6 +11,7 @@ export class UsuariosComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    
   }
   openForm(){
     this.router.navigate(['editor/forms/formusuario']);

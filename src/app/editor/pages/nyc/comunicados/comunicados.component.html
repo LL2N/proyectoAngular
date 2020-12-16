@@ -3,7 +3,7 @@
 <button class="bnuevo" (click)="openForm()" >+ Nuevo</button>
 <div class="content">
 	<div *ngFor="let comunicado of comunicados" class="post">
-		<button class="beliminar" (click)="onDelete(comunicado)">Eliminar</button>
+		<button class="beliminar" (click)="onDelete(comunicado.id)">Eliminar</button>
 		<button class="beditar">Editar</button>
 
 		<p class="date">{{comunicado.fecha}}</p>
