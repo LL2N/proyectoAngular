@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/auth'
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Injectable({
   providedIn: 'root'
 })
 export class FirebaseService {
 
   isLoggedIn = false
+  usuarios: FirebaseListObservable<any[]>;
   constructor(public firebaseAuth : AngularFireAuth) { }
   async signin(email: string, password : string){
     await this.firebaseAuth.signInWithEmailAndPassword(email,password)
@@ -20,6 +22,10 @@ export class FirebaseService {
   }
   logout(){
     this.firebaseAuth.signOut()
+    localStorage.removeItem('user')
+  }
+  getUsuarios(){
+    this.firebaseAuth.()
     localStorage.removeItem('user')
   }
 }
