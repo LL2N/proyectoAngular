@@ -3,7 +3,7 @@
 
 	<div *ngFor="let historia of historias" class="post">
 		<div  class="image">
-			<button class="beliminar">Eliminar</button>
+			<button class="beliminar" (click)="onDelete(historia.id)">Eliminar</button>
 			<button class="beditar">Editar</button>
 
           <h2 style="text-align:center;">{{historia.anio}}</h2>

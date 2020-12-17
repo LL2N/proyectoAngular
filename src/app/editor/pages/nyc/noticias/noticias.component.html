@@ -6,7 +6,7 @@
 	<div *ngFor="let noticia of noticias" class="post">
 		<div class="image">
 			<img [src]="noticia.imageUrl" /></div>
-			<button class="beliminar">Eliminar</button>
+			<button class="beliminar" (click)="onDelete(noticia.id)">Eliminar</button>
 			<button class="beditar">Editar</button>
 			<h2>{{noticia.titulo}}</h2>
 			<p class="date">{{noticia.fecha}}</p>
