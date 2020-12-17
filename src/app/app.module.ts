@@ -15,6 +15,7 @@ import { HorariosService } from "./shared/services/horarios.service";
 import { RutasService } from "./shared/services/rutas.service";
 import { TarifasService } from "./shared/services/tarifas.service";
 import { FirebaseService } from './shared/services/firebase.service';
+import { UsuariosService } from './shared/services/usuarios.service';
 
 
 
@@ -48,7 +49,8 @@ const routes: Routes = [
     HorariosService,
     RutasService,
     TarifasService,
-    FirebaseService
+    FirebaseService,
+    UsuariosService
   ]
 })
 export class AppModule {}

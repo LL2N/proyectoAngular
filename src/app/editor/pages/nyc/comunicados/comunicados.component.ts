@@ -31,7 +31,7 @@ export class ComunicadosComponent implements OnInit {
   }
 
   loadProduct(): void {
-    this.comunicados = [];}
+    this.comunicados = [];
     this.comunicadoGetSubs = this.ComunicadosService.getComunicados().subscribe( res => {
       Object.entries(res).map((p: any) => this.comunicados.push({id: p[0], ...p[1]}));
     }

@@ -7,9 +7,9 @@
       Lista de Editores
     </h1>
 
-    <div class="editor" *ngFor="let usuario of usuarios | async">
-      <p class="edit">{{usuario.nick}}</p>
-      <button class="delete">ELIMINAR</button>
+    <div class="editor" *ngFor="let usuario of usuarios">
+      <p class="edit">{{usuario.email}} ({{usuario.estado}})</p>
+      <button class="delete"  (click)="onUpdate(usuario.id, usuario)">{{usuario.estado==="desactivado" ? 'Activar' : 'Desactivar'}}</button>
     </div>
 
 
