@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { QuienessomosComponent } from './quienessomos/quienessomos.component';
-import { DYOComponent, DyoComponent } from './dyo/dyo.component';
-import { HistoriaComponent } from './historia/historia.component';
+
 import { Routes, RouterModule } from "@angular/router";
 import { SobreLPBComponent } from './sobre-lpb.component';
 

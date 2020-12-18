@@ -1,11 +1,11 @@
   <button class="bnuevo" (click)="openForm()">+ Nuevo</button>
   
-<div class="horarios">
+<div>
 
 	<img src="https://www.flaticon.es/svg/static/icons/svg/2154/2154743.svg" height="300" width="300">
 
 
-	<table>
+	<table class="table">
 		<tr>
 			<th> <img src="https://www.flaticon.es/svg/static/icons/svg/2972/2972528.svg" width="50px" height="50px"></th>
 			<th>Tabla de Horarios </th>
@@ -20,7 +20,7 @@
         <tr *ngFor="let horario of horarios" >
             <td>{{horario.horario}}</td>
             <td> {{horario.frecuencia}} </td>
-            <td> <button class="beliminar">Eliminar</button></td>
+            <td> <button class="beliminar" (click)="onDelete(horario.id)">Eliminar</button></td>
             </tr>
 
 	</table>
