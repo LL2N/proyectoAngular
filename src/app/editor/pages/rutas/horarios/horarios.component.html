@@ -20,16 +20,12 @@
         <tr *ngFor="let horario of horarios" >
             <td>{{horario.horario}}</td>
             <td> {{horario.frecuencia}} </td>
+            <td> <button class="beliminar">Eliminar</button></td>
             </tr>
 
 	</table>
 
 </div>
 
-<div class="editar">
-  <button class="beliminar">Eliminar</button>
-	<button class="btn4"  (click)="openForm()">Editar</button>
-  
 
-</div>
 

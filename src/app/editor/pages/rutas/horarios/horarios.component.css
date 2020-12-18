@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -152,16 +151,10 @@ th {
   padding-bottom: 10px;
 }
 .beliminar {
-  float: right;
-  font-weight: bold;
   color: #e02621;
-  position: absolute;
-  font-size: 25px;
-  border: none;
-  cursor: pointer;
+  font-weight: bold;
   background: none;
-  
-  margin-left: 700px;
+  font-size: 20px;
 }
 .beliminar:hover {
   text-decoration: underline;
