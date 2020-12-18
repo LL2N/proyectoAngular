@@ -26,7 +26,7 @@ comunicadoForm: FormGroup;
   onCancel(){
     this.router.navigate(['editor/pages/nyc/comunicados']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.comunicadoForm.value);
 
       this.comunicadoSubs = this.comunicadosService.addComunicado({

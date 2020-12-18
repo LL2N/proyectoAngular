@@ -30,7 +30,7 @@ export class FormTarifaComponent implements OnInit {
     onCancel(){
     this.router.navigate(['editor/pages/rutas/tarifas']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.tarifaForm.value);
 
       this.tarifaSubs = this.tarifasService.addTarifa({

@@ -28,7 +28,7 @@ export class FormNoticiaComponent implements OnInit {
     onCancel(){
     this.router.navigate(['editor/pages/nyc/noticias']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.noticiaForm.value);
 
       this.noticiaSubs = this.noticiasService.addNoticia({

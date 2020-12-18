@@ -25,7 +25,7 @@ export class FormHorarioComponent implements OnInit {
     onCancel(){
     this.router.navigate(['editor/pages//rutas/horarios']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.horarioForm.value);
 
       this.horarioSubs = this.horariosService.addHorario({

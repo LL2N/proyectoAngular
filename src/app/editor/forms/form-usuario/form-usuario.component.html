@@ -1,6 +1,6 @@
 <div class="fondo">
 	<div class="formulario">
-		<form action="">
+		<form action="" [formGroup]="usuarioForm">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/La_Paz_Bus_logo.svg/1019px-La_Paz_Bus_logo.svg.png" height="150px" width="150px">
 			<h1>Nuevo Usuario</h1>
 			<h3>Llenar los siguientes campos</h3>
@@ -9,12 +9,12 @@
 				<p>
 
 					<label for="name">Email</label>
-					<input type="text"  #email>
+					<input type="text"  formControlName="email">
 			</p>
 
 					<p>
 						<label for="con"> Contraseña</label>
-						<input type="password" #password>
+						<input type="password" formControlName="password">
 			</p>
 
 
@@ -23,7 +23,7 @@
 		</form>
 
 
-		<button class="submit" (click)="onCreate(email.value,password.value)">Agregar</button>
+		<button class="submit" (click)="onCreate()">Agregar</button>
 		<button class="button" (click)="onCancel()">Cancelar</button>
 
 	</div>
