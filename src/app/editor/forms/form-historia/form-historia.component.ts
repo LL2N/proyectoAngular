@@ -26,7 +26,7 @@ export class FormHistoriaComponent implements OnInit {
   onCancel(){
     this.router.navigate(['editor/pages/sobrelpb']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.historiaForm.value);
 
       this.historiaSubs = this.historiasService.addHistoria({

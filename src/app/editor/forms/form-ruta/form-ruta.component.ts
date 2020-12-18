@@ -27,7 +27,7 @@ export class FormRutaComponent implements OnInit {
     onCancel(){
     this.router.navigate(['editor/pages/rutas/lista']);
   }
-  onCreate(form: any): void {
+  onCreate(): void {
     console.log('FORM: ', this.rutaForm.value);
 
       this.rutaSubs = this.rutasService.addRuta({

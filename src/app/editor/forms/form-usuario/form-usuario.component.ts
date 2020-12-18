@@ -29,7 +29,7 @@ export class FormUsuarioComponent implements OnInit {
     this.router.navigate(['editor/pages/usuarios']);
   }
 
-  onCreate(form: any){
+  onCreate(){
 
     this.usuarioSubs =this.UsuariosService.addUsuario({...this.usuarioForm.value}).subscribe(
       ()  => {
