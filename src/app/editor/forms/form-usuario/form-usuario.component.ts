@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { FirebaseService } from '../../../shared/services/firebase.service';
@@ -13,23 +14,27 @@ export class FormUsuarioComponent implements OnInit {
 
   usuario: any;
   usuarioSubs: Subscription;
+  usuarioForm: FormGroup;
 
-  constructor(private router: Router, public firebaseService : FirebaseService, private UsuariosService: UsuariosService) { };
+  constructor(private router: Router, public firebaseService : FirebaseService, private UsuariosService: UsuariosService, private formBuilder: FormBuilder) { };
 
   ngOnInit() {
+   this.usuarioForm = this.formBuilder.group({
+      email: ['', [Validators.required]],
+      password: ['', [Validators.required]],
+      estado: ['activado', [Validators.required]]
+    });
   }
   onCancel(){
     this.router.navigate(['editor/pages/usuarios']);
   }
 
-  onCreate(email:string,password:string){
-    this.usuario = {"email": email, "estado": "activado"}
+  onCreate(form: any){
 
-    console.log('Usuario: ', this.usuario);
-
-    this.firebaseService.signup(email,password).then(
+    this.usuarioSubs =this.UsuariosService.addUsuario({...this.usuarioForm.value}).subscribe(
       ()  => {
-      this.UsuariosService.addUsuario({"email": email, "estado": "activado"})
+      
+      this.firebaseService.signup( this.usuarioForm.value.email,this.usuarioForm.value.password)
       this.onCancel();
     }
     );
